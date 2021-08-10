@@ -1,0 +1,7 @@
+<ul>
+{{ range where .Site.RegularPages "Section" "code-span-testing" }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+{{ end }}
+</ul>
